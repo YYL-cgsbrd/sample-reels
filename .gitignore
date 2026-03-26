@@ -1,0 +1,4 @@
+foundry-erc20/.env
+foundry-erc20/out/
+foundry-erc20/cache/
+foundry-erc20/lib/
