@@ -1,66 +1,19 @@
-## Foundry
+# 🚀 Foundry Basic NFT Project
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+这是一个基于 Foundry 框架开发的 ERC-721 代币项目。
 
-Foundry consists of:
+## 🛠 技术栈
+- **Solidity**: 智能合约开发
+- **Foundry**: 编译、测试与部署
+- **IPFS (Pinata)**: 去中心化元数据存储
+- **Foundry-DevOps**: 自动化部署管理
 
-- **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
-- **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
-- **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
-- **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+## 📋 功能特点
+- 遵循 OpenZeppelin ERC721 标准。
+- 完整的测试覆盖（单元测试 & 集成测试）。
+- 自动化 Mint 脚本，支持 Sepolia 测试网。
 
-## Documentation
-
-https://book.getfoundry.sh/
-
-## Usage
-
-### Build
-
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+## 🚀 快速开始
+1. 安装依赖：`forge install`
+2. 部署合约：`make deploy ARGS="--network sepolia"`
+3. 铸造 NFT：`make mint ARGS="--network sepolia"`
